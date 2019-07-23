@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>BabyCare</title>
+    <!-- ########## -->
+    <!-- added directly from upendra's project -->
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
+      rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+    <link rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+      href="vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme-elements.css">
+    <link rel="stylesheet" href="css/theme-blog.css">
+    <link rel="stylesheet" href="css/theme-shop.css">
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/skin-digital-agency.css">
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="css/demos/demo-digital-agency.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+
+
+    <style type="text/css">
+    #header .header-nav.header-nav-stripe nav>ul>li>a {
+      font-size: 15px;
+    }
+    </style>
+
+    <!-- END of added directly from upendra's project -->
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- ########## -->
+    <!-- added directly from upendra's project -->
+
+    <!-- Vendor -->
+  	<script src="vendor/jquery/jquery.min.js"></script>
+  	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+  	<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  	<script src="vendor/jquery-cookie/jquery-cookie.min.js"></script>
+  	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  	<script src="vendor/common/common.min.js"></script>
+  	<script src="vendor/jquery.validation/jquery.validation.min.js"></script>
+  	<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+  	<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
+  	<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+  	<script src="vendor/isotope/jquery.isotope.min.js"></script>
+  	<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  	<script src="vendor/vide/vide.min.js"></script>
+
+  	<!-- Theme Base, Components and Settings -->
+  	<script src="js/theme.js"></script>
+
+  	<!-- Current Page Vendor and Views -->
+  	<script src="js/views/view.contact.js"></script>
+
+  	<!-- Current Page Vendor and Views -->
+  	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  	<!-- Theme Custom -->
+  	<script src="js/custom.js"></script>
+
+  	<!-- Theme Initialization Files -->
+  	<script src="js/theme.init.js"></script>
+
+  <!-- END  added directly from upendra's project -->
+  <!-- External JavaScripts for the FaqMain click effect
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript">
+		jQuery(window).ready(
+				function($) {
+					var $faqItems = $('#faqs .faq');
+					if (window.location.hash != '') {
+						var getFaqFilterHash = window.location.hash;
+						var hashFaqFilter = getFaqFilterHash.split('#');
+						if ($faqItems.hasClass(hashFaqFilter[1])) {
+							$('#portfolio-filter li').removeClass(
+									'activeFilter');
+							$('[data-filter=".' + hashFaqFilter[1] + '"]')
+									.parent('li').addClass('activeFilter');
+							var hashFaqSelector = '.' + hashFaqFilter[1];
+							$faqItems.css('display', 'none');
+							if (hashFaqSelector != 'all') {
+								$(hashFaqSelector).fadeIn(500);
+							} else {
+								$faqItems.fadeIn(500);
+							}
+						}
+					}
+
+					window.$('#portfolio-filter a').click(function() {
+						$('#portfolio-filter li').removeClass('activeFilter');
+						$(this).parent('li').addClass('activeFilter');
+						var faqSelector = $(this).attr('data-filter');
+						$faqItems.css('display', 'none');
+						if (faqSelector != 'all') {
+							$(faqSelector).fadeIn(500);
+						} else {
+							$faqItems.fadeIn(500);
+						}
+						return false;
+					});
+				});
+	</script>
+  <script>
+
+  var map;
+
+  function initMap() {
+    if (navigator.geolocation) {
+      try {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var myLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          setPos(myLocation);
+        });
+      } catch (err) {
+        var myLocation = {
+          lat: 23.8701334,
+          lng: 90.2713944
+        };
+        setPos(myLocation);
+      }
+    } else {
+      var myLocation = {
+        lat: 23.8701334,
+        lng: 90.2713944
+      };
+      setPos(myLocation);
+    }
+  }
+
+  function setPos(myLocation) {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: myLocation,
+      zoom: 10
+    });
+
+    var service = new google.maps.places.PlacesService(map);
+    service.nearbySearch({
+      location: myLocation,
+      radius: 4000,
+      types: ['hospital']
+    }, processResults);
+
+  }
+
+  function processResults(results, status, pagination) {
+    if (status !== google.maps.places.PlacesServiceStatus.OK) {
+      return;
+    } else {
+      createMarkers(results);
+
+    }
+  }
+
+  function createMarkers(places) {
+    var bounds = new google.maps.LatLngBounds();
+    var placesList = document.getElementById('places');
+
+    for (var i = 0, place; place = places[i]; i++) {
+      var image = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      var marker = new google.maps.Marker({
+        map: map,
+        icon: image,
+        title: place.name,
+        animation: google.maps.Animation.DROP,
+        position: place.geometry.location
+      });
+
+      bounds.extend(place.geometry.location);
+    }
+    map.fitBounds(bounds);
+  }
+
+
+
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kxOQBen7WGGK80Ou0oSa_esnivbUtYQ&signed_in=true&libraries=places&callback=initMap" async defer></script>
+  <script>
+    function initAutocomplete() {
+      var map = new google.maps.Map(document.getElementById('map1'), {
+        center: {lat: 28.644800, lng: 77.216721},
+        zoom: 12,
+        mapTypeId: 'roadmap'
+      });
+
+      // Create the search box and link it to the UI element.
+      var input = document.getElementById('pac-input');
+      var searchBox = new google.maps.places.SearchBox(input);
+      map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+      // Bias the SearchBox results towards current map's viewport.
+      map.addListener('bounds_changed', function() {
+        searchBox.setBounds(map.getBounds());
+      });
+
+      var markers = [];
+      // Listen for the event fired when the user selects a prediction and retrieve
+      // more details for that place.
+      searchBox.addListener('places_changed', function() {
+        var places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+          return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach(function(marker) {
+          marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+          if (!place.geometry) {
+            console.log("Returned place contains no geometry");
+            return;
+          }
+          var icon = {
+            url: place.icon,
+            size: new google.maps.Size(100, 100),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(27, 54),
+            scaledSize: new google.maps.Size(40, 40)
+          };
+
+          // Create a marker for each place.
+          markers.push(new google.maps.Marker({
+            map: map,
+            icon: icon,
+            title: place.name,
+            position: place.geometry.location
+          }));
+
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+    }
+
+
+
+
+
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kxOQBen7WGGK80Ou0oSa_esnivbUtYQ&libraries=places&callback=initAutocomplete"
+       async defer></script>
+
+
+
+  </body>
+</html>

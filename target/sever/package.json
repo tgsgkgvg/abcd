@@ -1,0 +1,26 @@
+{
+  "name": "warbler-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "js-joda": "^1.9.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.10",
+    "nodemailer": "^4.6.8",
+    "nodemailer-smtp-transport": "^2.7.4"
+  }
+}
