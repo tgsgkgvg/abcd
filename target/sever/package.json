@@ -20,7 +20,7 @@
     "js-joda": "^1.9.2",
     "jsonwebtoken": "^8.2.0",
     "mongoose": "^5.0.10",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-transport": "^2.7.4"
   }
 }
